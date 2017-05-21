@@ -1,0 +1,29 @@
+<style>
+h1 { color: blue; text-decoration: underline; text-align: center}
+table, th, td {
+    border: 1px solid red;
+ }
+</style> 
+<h1>Ships</h1>
+<table>
+  <thead>
+    <tr>
+      <th> IMO  </th>
+      <th> Name </th>
+      <th> Status </th>
+      <th>Tipo de Ship</th>
+      <th>Company_id</th>
+<!--       <th colspan="2"> </th> -->
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <td><%= @ship.imo %></td>
+        <td><%= @ship.name %></td>
+        <td><%= @ship.status %></td>
+        <td><%= @ship.type_ship %></td>
+         <td><%= @ship.company_id %></td>           
+      </tr>
+  </tbody>
+</table>
